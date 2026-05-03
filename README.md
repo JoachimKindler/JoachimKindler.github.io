@@ -10,9 +10,10 @@ A clean static personal website template inspired by `https://jareds.site/`.
 ## Setup
 
 1. Customize `index.html` with your name, projects, and email.
-2. Update `styles.css` if you want different colors or spacing.
-3. Create a GitHub repository and push these files.
-4. Enable GitHub Pages from the repository settings, choosing the `main` branch and `/ (root)` folder.
+2. Add your images to the `images/` folder as `profile.jpg`, `gym-1.jpg`, and `gym-2.jpg`.
+3. Update `styles.css` if you want different colors or spacing.
+4. Create a GitHub repository and push these files.
+5. Enable GitHub Pages from the repository settings, choosing the `main` branch and `/ (root)` folder.
 
 ## Deploy
 
