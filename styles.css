@@ -244,6 +244,7 @@ body {
   border-radius: 28px;
   object-fit: cover;
   aspect-ratio: 4 / 5;
+  background: #e9e7e2;
 }
 
 .profile-actions {
@@ -254,6 +255,7 @@ body {
 
 .gallery {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
@@ -262,7 +264,14 @@ body {
   display: block;
   border-radius: 28px;
   object-fit: cover;
-  min-height: 280px;
+  min-height: 320px;
+  background: #e9e7e2;
+}
+
+.contact-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .about-panel {
