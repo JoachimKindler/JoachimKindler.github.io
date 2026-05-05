@@ -169,11 +169,23 @@ body {
   box-shadow: 0 40px 110px rgba(66, 66, 73, 0.12);
 }
 
+.visual-frame::before {
+  content: '';
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,94,44,0.16), transparent 25%),
+    radial-gradient(circle at 75% 60%, rgba(66, 66, 73, 0.08), transparent 26%);
+  animation: driftBackground 18s ease-in-out infinite;
+  pointer-events: none;
+}
+
 .visual-frame img {
   width: 100%;
   display: block;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  animation: floatImage 14s ease-in-out infinite;
+  transform-origin: center;
 }
 
 .visual-tag {
@@ -185,9 +197,37 @@ body {
   justify-content: center;
   padding: 12px 18px;
   border-radius: 999px;
-  background: rgba(255,94,44,0.14);
+  background: rgba(255,94,44,0.18);
   color: var(--accent);
   font-weight: 800;
+}
+
+.about-visual img {
+  width: 100%;
+  display: block;
+  border-radius: 32px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  background: #E0DAD5;
+  animation: floatImage 18s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.01);
+  }
+}
+
+@keyframes driftBackground {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(14px, -12px) scale(1.02);
+  }
 }
 
 .work-section {
